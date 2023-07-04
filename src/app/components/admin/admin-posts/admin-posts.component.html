@@ -1,0 +1,30 @@
+<h3 *ngIf="posts.length < 1">
+    Loading...
+</h3>
+
+<div class="container">
+
+    <h1 class="page-title">
+        All 
+        <span>
+            Blog
+        </span>
+        Posts
+    </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let post of posts">
+                <td>{{ post.title }}</td>
+                <td>
+                    <a [routerLink]="['/admin/posts', post.id]">View</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

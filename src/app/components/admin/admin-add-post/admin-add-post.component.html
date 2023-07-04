@@ -1,0 +1,58 @@
+<div class="container">
+
+    <h1 class="page-title">
+        Create Post
+    </h1>
+
+    <form #form="ngForm" (ngSubmit)="onSubmit()">
+        <label class="form-label">
+            Title
+        </label>
+        <input type="text" class="form-control" name="title" [(ngModel)]="post!.title">
+
+        <label class="form-label">
+            Content
+        </label>
+        <textarea class="form-control" name="content" [(ngModel)]="post!.content"></textarea>
+
+        <label class="form-label">
+            Summary
+        </label>
+        <textarea class="form-control" name="summary" [(ngModel)]="post!.summary"></textarea>
+
+        <label class="form-label">
+            Featured Image Url
+        </label>
+        <input type="text" class="form-control" name="featuredImageUrl" [(ngModel)]="post!.featuredImageUrl">
+
+
+        <label class="form-label">
+            Author
+        </label>
+        <input type="text" class="form-control" name="author" [(ngModel)]="post!.author">
+
+        <label class="form-label">
+            Url Handle
+        </label>
+        <input type="text" class="form-control" name="urlHandle" [(ngModel)]="post!.urlHandle">
+
+        <label class="form-label">
+            Visible
+        </label>
+        <input type="checkbox" class="form-control" name="visible" [(ngModel)]="post!.visible">
+
+        <label class="form-label">
+            Publish Date
+        </label>
+        <input type="text" class="form-control" name="publishDate" [(ngModel)]="post!.publishDate">
+
+        <label class="form-label">
+            Updated Date
+        </label>
+        <input type="text" class="form-control" name="updatedDate" [(ngModel)]="post!.updatedDate">
+
+        <button class="btn">
+            Save
+        </button>
+    </form>
+</div>

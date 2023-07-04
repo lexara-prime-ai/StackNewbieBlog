@@ -1,0 +1,30 @@
+.container {
+    padding: 2rem;
+}
+
+.card-img {
+    box-shadow: 0 1rem 1rem 0 rgba(0, 0, 0, .1);
+}
+
+.card-content {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: .9rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+    background: tomato;
+    color: white;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s all ease;
+    text-decoration: none;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}

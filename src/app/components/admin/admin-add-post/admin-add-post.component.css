@@ -1,0 +1,52 @@
+
+.container {
+    padding: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    padding: .5rem;
+    font-weight: 600;
+}
+
+input {
+    border: none;
+    border-bottom: .7px solid #242424;
+    width: 300px;
+}
+
+input:focus {
+    outline: none;
+}
+
+textarea {
+    height: 300px;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.btn {
+    padding: .9rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 3px;
+    background: tomato;
+    color: white;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s all ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 1;
+}

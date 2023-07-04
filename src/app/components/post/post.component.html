@@ -1,0 +1,18 @@
+<div class="container" *ngIf="post">
+    <div class="card">
+        <img class="card-img" [src]="post.featuredImageUrl" alt="post-image">
+
+        <div class="card-content">
+            <h2 class="post-title">
+                {{ post.title }}
+            </h2>
+
+            <article class="content" [innerHTML]="post.content">
+            </article>
+        </div>
+
+        <a class="btn" [routerLink]="['/']">
+            Back
+        </a>
+    </div>
+</div>
